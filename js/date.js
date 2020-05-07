@@ -60,7 +60,7 @@ window.onload = function() {
       // }else{
       //   audio.pause();
       // }
-    }else if((hour == h) && (minute == m) && (second == 5)) {
+    }else if((hour == h) && (minute == m) && (second == 1)) {
       if(window.confirm("确认关闭闹钟?")) {
         audio.pause();
       }
