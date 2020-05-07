@@ -52,14 +52,19 @@ window.onload = function() {
       }
     }
 
-    if((hour == h) && (minute == m)) {
+    if((hour == h) && (minute == m) && (second == 0)) {
       const audio = document.getElementById("audio");
       audio.play();
-      // alert("闹钟响了")
-    }else{
-      audio.pause();
+      // if(window.confirm("闹钟响了")) {
+      //   audio.play();
+      // }else{
+      //   audio.pause();
+      // }
+    }else if((hour == h) && (minute == m) && (second == 5)) {
+      if(window.confirm("确认关闭闹钟?")) {
+        audio.pause();
+      }
     }
-
   }
   // 当页面加载完时调用上面的clock()函数
   clock()
