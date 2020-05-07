@@ -20,7 +20,7 @@ body {
   background: #ecf0f1;
 }
 #clockbody {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 20px;
 }
@@ -55,8 +55,8 @@ body {
   cursor: pointer;
 }
 #clockset {
-  display: flex;
   flex-direction: column;
+  display: none;
 }
 #clockset .set-title {
   background: #3498db;
