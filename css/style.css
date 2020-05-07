@@ -17,48 +17,35 @@ body {
 }
 #clockbody,
 #clockset {
-  width: 500px;
-  height: 400px;
   background: #ecf0f1;
-  position: relative;
 }
 #clockbody {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
 }
 #clockbody .title {
-  position: absolute;
   font-size: 50px;
   font-weight: 200;
-  top: 50px;
-  display: inline;
+  text-align: center;
+  padding: 10px;
 }
 #clockbody #time,
 #clockbody #date {
   color: #555;
   font-weight: 300;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 #clockbody #time {
-  width: 100%;
   font-size: 75px;
   font-family: clockicons, sans-serif;
 }
 #clockbody #date {
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  width: 100%;
+  padding: 10px;
   font-size: 25px;
 }
 #clockbody .btn-clock {
-  position: absolute;
-  bottom: 30px;
+  text-align: center;
 }
 #clockbody .btn-clock button {
   background-color: #27ae60;
@@ -68,8 +55,8 @@ body {
   cursor: pointer;
 }
 #clockset {
+  display: flex;
   flex-direction: column;
-  display: none;
 }
 #clockset .set-title {
   background: #3498db;
@@ -86,8 +73,7 @@ body {
 }
 #clockset .set-main .settime {
   display: flex;
-  justify-content: center;
-  padding: 15px;
+  padding: 10px 0;
 }
 #clockset .set-main .settime .timeitem {
   margin-right: 10px;
@@ -97,35 +83,24 @@ body {
   height: 25px;
   border: 0;
 }
-#clockset .set-main .music {
-  position: relative;
-}
-#clockset .set-main .music select {
-  margin-top: 10px;
-  width: 100px;
-  height: 25px;
-}
 #clockset .set-main .music .file {
   display: flex;
+  flex-direction: column;
   margin-top: 10px;
-  align-items: center;
-}
-#clockset .set-main .music .file audio {
-  flex: 1;
 }
 #clockset .set-bottom {
   text-align: right;
   padding: 5px;
 }
 #clockset .set-bottom button {
-  padding: 10px 30px;
+  padding: 8px;
   border: #27ae60;
   cursor: pointer;
+  margin-right: 5px;
 }
 #clockset .set-bottom button:nth-of-type(1) {
   color: #555;
   background: #bdc3c7;
-  margin-right: 10px;
 }
 #clockset .set-bottom button:nth-of-type(2) {
   color: #fff;

@@ -17,48 +17,34 @@ body {
   align-items: center;
 }
 #clockbody, #clockset {
-  width: 500px;
-  height: 400px;
   background: #ecf0f1;
-  position: relative;
 }
 #clockbody {
-  display: flex;
-  // display: none;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
   .title {
-    position: absolute;
     font-size: 50px;
     font-weight: 200;
-    top: 50px;
-    display: inline;
+    text-align: center;
+    padding: 10px;
   }
   #time,#date {
     color: #555;
     font-weight: 300;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
   #time {
-    width: 100%;
     font-size: 75px;
     font-family: clockicons,sans-serif;
   }
   #date {
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    width: 100%;
+    padding: 10px;
     font-size: 25px;
   }
   .btn-clock {
-    position: absolute;
-    bottom: 30px;
+    text-align: center;
     button {
       background-color: #27ae60;
       padding: 10px;
@@ -70,9 +56,9 @@ body {
 
 }
 #clockset {
-    // display: flex;
+    display: flex;
     flex-direction: column;
-    display: none;
+    // display: none;
 
     .set-title {
       background: #3498db;
@@ -88,36 +74,21 @@ body {
       border-bottom: 1px solid rgb(229, 229, 229);
       .settime {
         display: flex;
-        justify-content: center;
-        padding: 15px;
+        padding: 10px 0;
         .timeitem {
-          // flex: 1;
           margin-right: 10px;
           input {
             width: 120px;
             height: 25px;
             border: 0;
           }
-          // width: 100px;
         }
       }
       .music {
-        // padding: 15px;
-        position: relative;
-        select {
-          margin-top: 10px;
-          width: 100px;
-          height: 25px;
-        }
         .file {
           display: flex;
+          flex-direction: column;
           margin-top: 10px;
-          align-items: center;
-
-
-          audio {
-            flex: 1;
-          }
         }
       }
     }
@@ -125,14 +96,14 @@ body {
       text-align: right;
       padding: 5px;
       button {
-        padding: 10px 30px;
+        padding: 8px;
         border: #27ae60;
         cursor: pointer;
+        margin-right: 5px;
       }
       button:nth-of-type(1) {
         color: #555;
         background: #bdc3c7;
-        margin-right: 10px;
       }
       button:nth-of-type(2) {
         color: #fff;
