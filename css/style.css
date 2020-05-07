@@ -22,7 +22,7 @@ body {
 #clockbody {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 60px;
 }
 #clockbody .title {
   font-size: 50px;
@@ -105,4 +105,9 @@ body {
 #clockset .set-bottom button:nth-of-type(2) {
   color: #fff;
   background-color: #27ae60;
+}
+@media screen and (max-width: 375px) {
+  #clockbody {
+    padding: 47px;
+  }
 }

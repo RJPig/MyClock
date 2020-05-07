@@ -1,0 +1,35 @@
+#clockbody {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+#clockbody .title {
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  padding: 10px;
+}
+#clockbody #time,
+#clockbody #date {
+  color: #555;
+  font-weight: 300;
+  text-align: center;
+}
+#clockbody #time {
+  font-size: 75px;
+  font-family: clockicons, sans-serif;
+}
+#clockbody #date {
+  padding: 10px;
+  font-size: 25px;
+}
+#clockbody .btn-clock {
+  text-align: center;
+}
+#clockbody .btn-clock button {
+  background-color: #27ae60;
+  padding: 10px;
+  border: #27ae60;
+  color: #fff;
+  cursor: pointer;
+}
