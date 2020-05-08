@@ -48,11 +48,14 @@ body {
   text-align: center;
 }
 #clockbody .btn-clock button {
-  background-color: #27ae60;
+  background-color: #2ecc71;
   padding: 10px;
-  border: #27ae60;
+  border: #2ecc71;
   color: #fff;
   cursor: pointer;
+}
+#clockbody .btn-clock button:hover {
+  background: #27ae60;
 }
 #clockset {
   flex-direction: column;
@@ -104,7 +107,13 @@ body {
 }
 #clockset .set-bottom button:nth-of-type(2) {
   color: #fff;
-  background-color: #27ae60;
+  background-color: #2ecc71;
+}
+#clockset .set-bottom button:nth-of-type(2):hover {
+  background: #27ae60;
+}
+#clockset .set-bottom button:nth-of-type(1):hover {
+  background: #95a5a6;
 }
 @media screen and (max-width: 375px) {
   #clockbody {

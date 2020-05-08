@@ -7,10 +7,10 @@
       <div>时间设置</div>
       <div class="settime">
         <div class="timeitem">
-          <input type="text" placeholder="时" id="hour">时
+          <input type="text" placeholder="时" id="hour" v-model="h">时
         </div>
         <div class="timeitem">
-          <input type="text" placeholder="分" id="minute">分
+          <input type="text" placeholder="分" id="minute" v-model="m">分
         </div>
       </div>
       <div class="music">
@@ -33,7 +33,9 @@ export default {
   name: 'Set',
   data() {
     return {
-      path: '/clock'
+      path: '/clock',
+      h: "",
+      m: ""
     }
   },
   methods: {
@@ -42,6 +44,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>
