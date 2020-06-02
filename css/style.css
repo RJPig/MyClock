@@ -1,3 +1,6 @@
+@import './clockbody.css';
+@import './clockset.css';
+
 * {
   padding: 0;
   margin: 0;
@@ -19,104 +22,9 @@ body {
 #clockset {
   background: #ecf0f1;
 }
-#clockbody {
-  display: flex;
-  flex-direction: column;
-  padding: 60px;
-}
-#clockbody .title {
-  font-size: 50px;
-  font-weight: 200;
-  text-align: center;
-  padding: 10px;
-}
-#clockbody #time,
-#clockbody #date {
-  color: #555;
-  font-weight: 300;
-  text-align: center;
-}
-#clockbody #time {
-  font-size: 75px;
-  font-family: clockicons, sans-serif;
-}
-#clockbody #date {
-  padding: 10px;
-  font-size: 25px;
-}
-#clockbody .btn-clock {
-  text-align: center;
-}
-#clockbody .btn-clock button {
-  background-color: #2ecc71;
-  padding: 10px;
-  border: #2ecc71;
-  color: #fff;
-  cursor: pointer;
-}
-#clockbody .btn-clock button:hover {
-  background: #27ae60;
-}
-#clockset {
-  flex-direction: column;
-  display: none;
-}
-#clockset .set-title {
-  background: #3498db;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 100;
-  text-align: center;
-  padding: 10px;
-}
-#clockset .set-main {
-  flex: 1;
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-}
-#clockset .set-main .settime {
-  display: flex;
-  padding: 10px 0;
-}
-#clockset .set-main .settime .timeitem {
-  margin-right: 10px;
-}
-#clockset .set-main .settime .timeitem input {
-  width: 120px;
-  height: 25px;
-  border: 0;
-}
-#clockset .set-main .music .file {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-#clockset .set-bottom {
-  text-align: right;
-  padding: 5px;
-}
-#clockset .set-bottom button {
-  padding: 8px;
-  border: #27ae60;
-  cursor: pointer;
-  margin-right: 5px;
-}
-#clockset .set-bottom button:nth-of-type(1) {
-  color: #555;
-  background: #bdc3c7;
-}
-#clockset .set-bottom button:nth-of-type(2) {
-  color: #fff;
-  background-color: #2ecc71;
-}
-#clockset .set-bottom button:nth-of-type(2):hover {
-  background: #27ae60;
-}
-#clockset .set-bottom button:nth-of-type(1):hover {
-  background: #95a5a6;
-}
 @media screen and (max-width: 375px) {
   #clockbody {
     padding: 47px;
   }
 }
+
