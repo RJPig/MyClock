@@ -38,17 +38,17 @@ window.onload = function() {
     // 点击开始按钮,弹出设置成功提示窗,并回到时间显示界面
     beginclock.onclick = function() {
       // 获取输入框的值
-      h = onhour.value>9?onhour.value:"0"+onhour.value;
-      m = onminute.value>9?onminute.value:"0"+onminute.value;
+      h = onhour.value;
+      m = onminute.value;
       // 当点击开始按钮时,弹出设置成功按钮,并关闭设置界面,返回时间显示界面
       
       // console.log(h + ":" + m);
-      if(h != "" && m != "") {
+      if(h != "" && m != "" && h >= hour && m > minute) {
         alert("设置成功");
         document.getElementById("clockset").style.display = 'none';
         document.getElementById("clockbody").style.display = 'flex';
-      }else{
-        alert("请设置时间")
+      } else {
+        alert("请重新设置，设置时间不能为空且必须大于当前时间")
       }
     }
 
