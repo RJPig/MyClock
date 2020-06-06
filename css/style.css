@@ -27,4 +27,10 @@ body {
     padding: 47px;
   }
 }
+@media screen and (min-width: 411px) {
+  #clockbody {
+    padding: 64px;
+  }
+}
+
 
