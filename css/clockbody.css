@@ -4,10 +4,9 @@
   padding: 60px;
 }
 #clockbody .title {
-  font-size: 50px;
   font-weight: 200;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 #clockbody #time,
 #clockbody #date {
@@ -16,19 +15,19 @@
   text-align: center;
 }
 #clockbody #time {
-  font-size: 75px;
+  padding: 10px 0;
   font-family: clockicons, sans-serif;
 }
 #clockbody #date {
-  padding: 10px;
-  font-size: 25px;
+  padding: 10px 0;
 }
 #clockbody .btn-clock {
   text-align: center;
+  padding: 5px 0;
 }
 #clockbody .btn-clock button {
   background-color: #2ecc71;
-  padding: 10px;
+  padding: 1rem;
   border: #2ecc71;
   color: #fff;
   cursor: pointer;

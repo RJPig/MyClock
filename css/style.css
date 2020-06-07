@@ -1,5 +1,6 @@
 @import './clockbody.css';
 @import './clockset.css';
+@import './media.css';
 
 * {
   padding: 0;
@@ -21,16 +22,7 @@ body {
 #clockbody,
 #clockset {
   background: #ecf0f1;
-}
-@media screen and (max-width: 375px) {
-  #clockbody {
-    padding: 47px;
-  }
-}
-@media screen and (min-width: 411px) {
-  #clockbody {
-    padding: 64px;
-  }
+  justify-content: center;
 }
 
 
