@@ -21,7 +21,7 @@ window.onload = function() {
     let month = date.getMonth();
     let day = date.getDate();
   
-    let hour = date.getHours();
+    let hour = date.getHours()>9?date.getHours():"0"+date.getHours();
     // 当分钟和秒小于10时自动改为: 0 => 00
     let minute = date.getMinutes()>9?date.getMinutes():"0"+date.getMinutes();
     let second = date.getSeconds()>9?date.getSeconds():"0"+date.getSeconds();
