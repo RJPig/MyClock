@@ -1,4 +1,18 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
+  #clockbody .title {
+    font-size: 3rem;
+  }
+  #clockbody #time {
+    font-size: 5rem;
+  }
+  #clockbody #date {
+    font-size: 2rem;
+  }
+  #clockbody .btn-clock button {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1024px) {
   #clockbody .title {
     font-size: 8rem;
   }
